@@ -1,6 +1,6 @@
-1. import streamlit as st = membuat singkatan atau memanggil library (jalan berbasis web)
-2. import joblib = mengimport library
-3. import numpy as np = mengimport data numeric
+1. import streamlit as st 
+2. import joblib 
+3. import numpy as np 
 4
 5. # Memuat model regresi linear yang sudah disimpan
 6. lin_reg_loaded = joblib.load('lin_reg_model.joblib')
@@ -13,5 +13,5 @@
 13.
 14. # Prediksi gaji
 15. if st.button("Prediksi Gaji"):
-16. 	gaji = lin_reg_loaded.predict([[years_experience]])-->pakai kurung siku untuk manggil variabel
-17.	st.write(f"Gaji seseorang setelah bekerja selama {years_experience} tahun adalah ${gaji[0]:,.2f}")-->pakai kurung kurawal untuk manggil string/menggabungkan antara teks dan variable.
+16. 	gaji = lin_reg_loaded.predict([[years_experience]])
+17.	  st.write(f"Gaji seseorang setelah bekerja selama {years_experience} tahun adalah ${gaji[0]:,.2f}")
